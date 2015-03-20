@@ -43,7 +43,7 @@ cacheSolve <- function(x, ...) {
   }
   ## if the inverse has not been calculated, then do it with solve
   ## get the data
-  data <- x$get()
+  data <- x$getMatrix()
   ## Use the solve function to return the inverse of the matrix
   i <- solve(data, ...)
   ## Use the set function to set new value of matrix
